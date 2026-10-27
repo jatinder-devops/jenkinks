@@ -1,0 +1,124 @@
+# 01 - Introduction to Jenkins
+
+## What is Jenkins?
+
+Jenkins is an open-source automation server used to automate software development tasks, including building, testing, and deploying applications.
+
+It is widely used in DevOps to implement Continuous Integration (CI) and Continuous Delivery or Deployment (CD).
+
+## Why Do We Use Jenkins?
+
+Without automation, developers and operations engineers may need to perform repetitive tasks manually.
+
+Jenkins helps automate these tasks through pipelines.
+
+### Example
+
+Imagine a developer updates an application's code and pushes the changes to GitHub.
+
+Jenkins can automatically:
+
+1. Fetch the latest code from GitHub.
+2. Build the application.
+3. Run automated tests.
+4. Build a Docker image.
+5. Deploy the application to a server.
+
+This process reduces manual work and helps teams deliver software more consistently.
+
+## What Is CI/CD?
+
+### Continuous Integration (CI)
+
+Continuous Integration is the practice of frequently integrating code changes into a shared repository and automatically building and testing those changes.
+
+### Continuous Delivery (CD)
+
+Continuous Delivery ensures that software changes are automatically built, tested, and prepared for release.
+
+### Continuous Deployment (CD)
+
+Continuous Deployment automatically releases changes to production after they pass the required checks.
+
+## Jenkins in DevOps
+
+Jenkins can integrate with tools such as:
+
+| Tool | Purpose |
+|---|---|
+| Git | Version control |
+| GitHub | Source code hosting |
+| Maven | Java application builds |
+| Gradle | Application builds |
+| Docker | Containerization |
+| SonarQube | Code quality analysis |
+| Kubernetes | Container orchestration |
+| AWS | Cloud infrastructure and deployment |
+| Terraform | Infrastructure as Code |
+
+These integrations depend on the tools and plugins configured for your project.
+
+## How Jenkins Works
+
+A basic Jenkins workflow looks like this:
+
+```text
+Developer
+    |
+    v
+GitHub Repository
+    |
+    v
+Jenkins Pipeline
+    |
+    v
+Build Application
+    |
+    v
+Run Tests
+    |
+    v
+Build Docker Image
+    |
+    v
+Deploy Application
+```
+
+Not every pipeline needs all these stages. The pipeline depends on the application and deployment requirements.
+
+## Important Jenkins Concepts
+
+| Concept | Explanation |
+|---|---|
+| Jenkins Controller | Coordinates jobs and manages Jenkins configuration |
+| Agent | Executes pipeline tasks |
+| Job | A configured task or automation workflow |
+| Build | One execution of a job or pipeline |
+| Pipeline | A sequence of automated stages |
+| Jenkinsfile | A file that defines a pipeline as code |
+| Plugin | An extension that adds functionality |
+| Workspace | Directory used by a job to work with files |
+| Credentials | Securely stored authentication information |
+
+## Advantages of Jenkins
+
+- Automates repetitive tasks.
+- Supports CI/CD pipelines.
+- Integrates with many DevOps tools.
+- Supports pipeline definitions as code.
+- Provides build logs and execution history.
+- Supports distributed builds using agents.
+
+## Hands-On Assignment
+
+Complete these tasks:
+
+- [ ] Explain Jenkins in your own words.
+- [ ] Explain the difference between CI and CD.
+- [ ] Identify five tools that integrate with Jenkins.
+- [ ] Draw a basic Jenkins CI/CD workflow.
+- [ ] Explain the purpose of a Jenkinsfile.
+
+## Next Topic
+
+Proceed to [Jenkins Installation](../03-jenkins-installation/README.md).
