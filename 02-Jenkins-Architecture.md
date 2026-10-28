@@ -26,10 +26,3 @@ Build      Test
 
 For a beginner lab, the built-in node may be enough. Separate agents are useful for isolation and scaling; avoid running untrusted builds on a privileged controller.
 
-## Lab
-- Locate the node configuration in Manage Jenkins.
-- Identify the built-in node and its executor setting.
-- Explain why a team may use separate agents.
-
-## Assignment
-Draw an architecture with one controller and two agents. Label the responsibilities of each.
