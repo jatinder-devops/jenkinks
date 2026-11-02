@@ -1,0 +1,22 @@
+# Stage 9 — Webhooks
+
+## Objective
+Understand event-driven builds using GitHub webhooks.
+
+A webhook lets GitHub notify a reachable endpoint when an event, such as a push, occurs. Jenkins must also be configured to respond to that event.
+
+## Workflow
+```text
+Git push -> GitHub webhook -> Jenkins trigger -> Pipeline
+```
+
+## Lab outline
+1. Configure a Jenkins job with the appropriate GitHub integration or webhook trigger.
+2. Configure the repository webhook using the endpoint and event type required by your setup.
+3. Make a test commit.
+4. Inspect the webhook delivery and Jenkins build history.
+
+A local `localhost:8080` endpoint is not reachable directly by GitHub. Use a secure, reachable endpoint or an appropriate alternative for your lab. Do not expose Jenkins without access controls.
+
+## Assignment
+Document the webhook event, endpoint configuration, and evidence that the build was triggered.
