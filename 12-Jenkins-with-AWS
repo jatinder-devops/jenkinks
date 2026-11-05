@@ -1,0 +1,18 @@
+# Stage 12 — Jenkins with AWS
+
+## Objective
+Understand how Jenkins can publish artifacts or container images to AWS and automate deployments.
+
+## Suggested learning sequence
+1. Understand IAM roles and least-privilege policies.
+2. Create a test Amazon ECR repository.
+3. Configure an approved AWS identity mechanism for the Jenkins agent.
+4. Authenticate to ECR.
+5. Build and push a test image.
+6. Add deployment to a test environment.
+7. Verify the deployed version and document rollback.
+
+Prefer an IAM role or another approved short-lived identity mechanism over long-lived access keys. Never commit credentials. Start with a sandbox and monitor AWS costs.
+
+## Assignment
+Draw your proposed pipeline and list the minimum AWS permissions each step requires.
